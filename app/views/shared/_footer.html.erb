@@ -1,0 +1,9 @@
+</main>
+<footer>
+    <div>現在の日時：<%= Time.new.strftime("%Y年%m月%d日") %></div>
+    <%if (controller.action_name == 'index') %>
+    <div>スケジュール合計：<%= @schedules.count%><div>
+    <%else%>
+    <%end%>
+</footer>
+</div>
